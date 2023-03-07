@@ -1,0 +1,14 @@
+
+.each-slide {
+  display: flex;
+  justify-content: center;
+  background-size: contain;
+  background-position: center;
+  height: 650px;
+}
+
+.slide-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
