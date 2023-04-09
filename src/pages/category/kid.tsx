@@ -8,13 +8,13 @@ import { ProductList } from '@/components/products';
 import { FullScreenLoading } from "@/components/ui";
 
 
-const Home: NextPage = () => {
-  const { products, isLoading } = useProducts('/products');
+const KidPage: NextPage = () => {
+  const { products, isLoading } = useProducts('/products?gender=kid');
 
-  return (  
-    <ShopLayout title='Teslo-Shop - Home' pageDescription='Encuentra los mejores productos de Teslo aqui' >
+  return (
+    <ShopLayout title='Teslo-Shop - Kid Category' pageDescription='Encuentra los mejores productos para niños aquí.' >
       <Typography variant="h1" component="h1">Tienda</Typography>
-      <Typography variant="h2" sx={{ mb: 1 }}>Todos los productos para hombres</Typography>
+      <Typography variant="h2" sx={{ mb: 1 }}>Todos los productos para niños</Typography>
 
       {
         isLoading
@@ -26,4 +26,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home;
+export default KidPage;

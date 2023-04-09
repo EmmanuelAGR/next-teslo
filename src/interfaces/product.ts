@@ -1,3 +1,9 @@
+export interface IProductSlug {
+  slug: string;
+}
+
+export type ISize = 'XS'|'S'|'M'|'L'|'XL'|'XXL'|'XXXL';
+export type IType = 'shirts'|'pants'|'hoodies'|'hats';
 
 export interface IProduct {
   _id: string;
@@ -17,5 +23,3 @@ export interface IProduct {
   updatedAt: string;
 }
 
-export type ISize = 'XS'|'S'|'M'|'L'|'XL'|'XXL'|'XXXL';
-export type IType = 'shirts'|'pants'|'hoodies'|'hats';
